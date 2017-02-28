@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+
+    <record id="view_partner_industry_form" model="ir.ui.view">
+        <field name="name">view.partner.industry.form</field>
+        <field name="model">res.partner.industry</field>
+        <field name="arch" type="xml">
+            <form string="Partner Industry">
+                <sheet>
+                    <group>
+                        <group>
+                            <field name="name"/>
+                        </group>
+                        <group>
+                            <field name="description"/>
+                        </group>
+                    </group>
+                </sheet>
+            </form>
+        </field>
+    </record>
+
+    <record id="view_partner_industry_tree" model="ir.ui.view">
+        <field name="name">view.partner.industry.tree</field>
+        <field name="model">res.partner.industry</field>
+        <field name="arch" type="xml">
+            <tree string="Partner Industry">
+                <field name="name"/>
+                <field name="description"/>
+            </tree>
+        </field>
+    </record>
+
+    <record id="partner_industry_search" model="ir.ui.view">
+        <field name="name">partner.industry.search</field>
+        <field name="model">res.partner.industry</field>
+        <field name="arch" type="xml">
+            <search string="Partner Industry">
+                <field name="name"/>
+                <field name="description"/>
+            </search>
+        </field>
+    </record>
+
+    <record id="open_partner_industry" model="ir.actions.act_window">
+        <field name="name">Partner Industry</field>
+        <field name="res_model">res.partner.industry</field>
+        <field name="type">ir.actions.act_window</field>
+        <field name="view_type">form</field>
+        <field name="view_mode">tree,form</field>
+    </record>
+
+    <menuitem action="open_partner_industry"
+              id="menu_partner_industry"
+              parent="sales_team.menu_config_address_book"
+              sequence="10"/>
+
+</odoo>
