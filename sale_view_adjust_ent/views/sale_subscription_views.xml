@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+
+    <record id="sale_subscription_view_search" model="ir.ui.view">
+        <field name="name">sale.subscription.search</field>
+        <field name="model">sale.subscription</field>
+        <field name="inherit_id" ref="sale_contract.sale_subscription_view_search"/>
+        <field name="arch" type="xml">
+            <xpath expr="//filter[@name='open']" position="after">
+                <filter name="expiring"
+                        string="Expiring in 30 Days"
+                        domain="[('date','&lt;=',(context_today()+relativedelta(days=30)).strftime('%Y-%m-%d'))]"/>
+            </xpath>
+        </field>
+    </record>
+
+</odoo>
