@@ -1,0 +1,22 @@
+# Translation of Odoo Server.
+msgid ""
+msgstr ""
+
+#. module: website_portal_sale
+#: model:ir.ui.view,arch_db:website_portal_sale.portal_my_invoices
+msgid "<i class=\"fa fa-arrow-circle-right\"/> Pay Now"
+msgstr "<i class=\"fa fa-arrow-circle-right\"/> 今支払う"
+
+#. module: website_portal_sale
+#: model:ir.ui.view,arch_db:website_portal_sale.portal_my_invoices
+msgid ""
+"<span class=\"label label-info\"><i class=\"fa fa-fw fa-clock-o\"/> Waiting "
+"for Payment</span>"
+msgstr ""
+"<span class=\"label label-info\"><i class=\"fa fa-fw fa-clock-o\"/> "
+"早急にお支払いください</span>"
+
+#. module: website_portal
+#: model:ir.ui.view,arch_db:website_portal.portal_layout
+msgid "Your Details"
+msgstr "お客様のアカウント情報"
